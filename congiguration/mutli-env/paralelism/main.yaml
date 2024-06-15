@@ -2,7 +2,6 @@
   hosts: nginx
   become: yes
   vars:
-    name: rakesh
   tasks:
   - name: printing
     ansible.builtin.debug:
