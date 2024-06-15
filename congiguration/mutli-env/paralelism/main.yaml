@@ -2,9 +2,9 @@
   hosts: nginx
   become: yes
   vars:
-    rakesh: "http://user:password@www.acme.com:9000/dir/index.html?query=term#fragment"
+   
   tasks:
   - name: printing
     ansible.builtin.debug:
-      msg: "{{ {{ rakesh }} | urlsplit('hostname') }}"
+      msg: {{ "http://user:password@www.acme.com:9000/dir/index.html?query=term#fragment" | urlsplit('hostname') }}
       
