@@ -6,5 +6,5 @@
   tasks:
   - name: printing
     ansible.builtin.debug:
-      msg: "{{ some_variable | default() }}"
+      msg: "{{ rakesh | default() }}"
       
