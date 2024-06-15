@@ -5,5 +5,5 @@
   tasks:
   - name: printing
     ansible.builtin.debug:
-      msg: "{{ some_variable | default(name) }}"
+      msg: "{{ some_variable | default(5) }}"
       
