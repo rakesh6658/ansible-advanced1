@@ -1,0 +1,7 @@
+- name: multi-env variables
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: print env variables
+    ansible.builtin.debug:
+      msg: "{{ name }}"

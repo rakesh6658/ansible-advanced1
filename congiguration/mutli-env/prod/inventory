@@ -1,2 +1,4 @@
 [mongodb]
 34.235.128.88
+[mongodb:vars]
+name=prod-env

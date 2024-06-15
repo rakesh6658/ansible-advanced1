@@ -1,2 +1,4 @@
 [mongodb]
 35.172.186.97
+[mongodb:vars]
+name=dev-env
