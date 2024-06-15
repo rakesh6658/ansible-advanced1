@@ -1,0 +1,6 @@
+- name: connecting through ansible.cfg
+  hosts: node1
+  become: yes
+  tasks:
+  - name: connecting node1
+    ansible.builtin.shell: echo welcome to ansible > /tmp/rakesh 
