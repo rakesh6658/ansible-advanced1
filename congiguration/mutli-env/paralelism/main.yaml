@@ -2,7 +2,7 @@
   hosts: nginx
   become: yes
   vars:
-    name: "http://user:password@www.acme.com:9000/dir/index.html?query=term#fragment"
+    name: "http://user:password@web.rakeshreddy.online:9000/dir/index.html?query=term#fragment"
   tasks:
   - name: printing
     ansible.builtin.debug:
