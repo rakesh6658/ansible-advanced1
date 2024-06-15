@@ -1,12 +1,10 @@
 - name: installing nginx
   hosts: nginx
   become: yes
+  vars:
+  - name: rakesh
   tasks:
-  - name: installing nginx
-    ansible.builtin.yum:
-      name: nginx
-      state: installed
-  - name: starting nginx
-    ansible.builtin.service:
-      name: nginx
-      state: stopped    
+  - name: printing
+    ansible.builtin.debug:
+      msg: "{{ some_variable | default(name) }}"
+      
