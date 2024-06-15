@@ -2,9 +2,9 @@
   hosts: nginx
   become: yes
   vars:
-    rakesh:
+    rakesh: 
   tasks:
   - name: printing
     ansible.builtin.debug:
-      msg: ""
+      msg: "{{rakesh}}"
       
